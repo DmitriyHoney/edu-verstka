@@ -1,0 +1,38 @@
+.start-section {
+    &__wrap {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+    &__card {
+        border-radius: 16px;
+        width: calc(25% - 24px);
+        position: relative;
+        & .round-orange-link {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+        }
+        &-image {
+            border-radius: 16px 16px 0px 0px;
+            width: 100%;
+            & img {
+                width: 100%;
+            }
+        }
+        &-subtitle {
+            padding: 24px 32px;
+            background-color: $primary;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            border-radius: 0px 0px 16px 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+}

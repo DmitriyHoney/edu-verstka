@@ -1,0 +1,35 @@
+.resources {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-top: 32px;
+        &__item {
+            width: calc(50% - 24px);
+            & a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-bottom: 1px dashed #D6DAE1;
+                padding-bottom: 16px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: #23272F;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &:last-child a,
+            &:nth-last-child(2) a {
+                border-bottom: none;
+            }
+        }
+    }
+}

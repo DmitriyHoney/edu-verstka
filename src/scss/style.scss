@@ -1,5 +1,187 @@
-$primary: #34568E;
-$secondary: #F25A4F;
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
 
 body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Manrope;
+    font-size: 16px;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.uk-container {
+    max-width: 1504px;
+}
+
+.base-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    & img {
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.reset_ul_ol {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.base-section {
+    padding: 64px 0px;
+    &__title {
+        background-color: $primary;
+        /* H2 */
+        font-family: Manrope;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+        padding: 8px 32px;
+        border-radius: 32px;
+        display: inline-flex;
+    }
+}
+
+.more-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $primary;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.base-primary-btn {
+    background: $gradient-orange;
+    padding: 16px 32px;
+    border-radius: 62px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.round-orange-link {
+    width: 48px;
+    height: 48px;
+    background: $gradient-orange;
+    border-radius: 100%;
+}
+
+.square-orange-link {
+    width: 48px;
+    height: 48px;
+    background: $gradient-orange;
+    border-radius: 4px;
+}
+
+.outlined-link {
+    border-radius: 64px;
+    padding: 16px 32px;
+    border: 2px solid $primary;
+    color: $primary;
+    font-size: 16px;
+    font-weight: 700;
+    &_white {
+        border: 2px solid #fff;
+        color: #fff;
+        &:hover {
+            color: #fff !important;
+        }
+    }
+    &:hover {
+        color: $primary;
+    }
+}
+
+.paralax1 {
+    position: absolute;
+
+    z-index: 999;
+    bottom: 50px;
+    right: 0px;
+    width: 254px;
+    height: 254px;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.paralax2 {
+    position: absolute;
+
+    z-index: 999;
+    top: -50px;
+    left: 0px;
+    width: 168px;
+    height: 168px;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.paralax3 {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(4px);
+    }
+}
+
+div[title="Двойной щелчок - Добавить элемент"]{
+    width: 100%;
+}
+
+.outlined-link_sm {
+    display: none;
+}
+
+.square-orange-link {
+    flex-shrink: 0;
+}
+
+@import 'header';
+@import 'offer';
+@import 'startsection';
+@import 'news';
+@import 'info';
+@import 'subscribe';
+@import 'about';
+@import 'usefull';
+@import 'resources';
+@import 'footer';
+@import 'media';

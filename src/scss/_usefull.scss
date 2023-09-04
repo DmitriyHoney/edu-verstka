@@ -1,0 +1,131 @@
+.usefull {
+    &-section {
+        position: relative;
+    }
+    &-base-wrap {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    &-base-card {
+        background-color: $primary;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 16px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: calc(20% - 13px);
+        text-transform: uppercase;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &-hard-wrap {
+        margin-top: 32px;
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+    &-middle-wrap {
+        margin-top: 32px;
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+    &-middle-card {
+        width: calc(33.33% - 24px);
+        &__link {
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #23272F;
+            /* P */
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: none;
+                color: #23272F;
+            }
+        }
+        &__image {
+            width: 100%;
+            border-radius: 16px 16px 0px 0px;
+            height: 200px;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 16px 16px 0px 0px;
+            }
+        }
+        &__content {
+            background-color: #F7F8FF;
+            border-radius: 0px 0px 16px 16px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    &-hard-card {
+        background-color: #F7F8FF;
+        border-radius: 16px;
+        display: flex;
+        width: calc(50% - 24px);
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: baseline;
+        }
+        & .base-primary-btn {
+            display: inline-flex;
+            margin-top: auto;
+        }
+        & .subscribe-card__head-href {
+            gap: 32px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        & h3 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        &__image {
+            position: relative;
+            height: 100%;
+            width: 256px;
+            flex-shrink: 0;
+            & img:nth-child(1) {
+                border-radius: 8px 0px 0px 8px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            & img:nth-child(2) {
+                position: absolute;
+                left: 24px;
+                top: 24px;
+                border-radius: 8px;
+            }
+        }
+        &__content {
+            padding: 32px;
+        }
+    }
+}
