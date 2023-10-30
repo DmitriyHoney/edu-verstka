@@ -198,4 +198,50 @@ $(document).ready(function() {
     });
   });
 
+
+  
+
+//   el.offsetHeight
+
+    
+    const offCanvas = UIkit.offcanvas(document.querySelector('#offcanvas-usage'));
+    const bar = document.querySelector('#offcanvas-usage .uk-offcanvas-bar');
+    const menubtn = document.querySelector('.header-bottom__menubtn');
+    const closebtn = document.querySelector('.close-offcanvas');
+    if (closebtn) {
+        closebtn.addEventListener('click', (e) => {
+            bar.style.overflow = 'hidden';
+            e.preventDefault();
+            e.stopPropagation();
+            offCanvas.hide();
+        });
+    }
+    if (menubtn) {
+        const sidebarParent = document.querySelector('.new-leftsidebar')
+        const sidebar = document.querySelector('.leftsidebar-wrap')
+        menubtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            offCanvas.show({
+                'esc-close': true,
+                'bg-close': true
+            });
+            if (sidebar.offsetHeight < sidebarParent.offsetHeight) {
+                sidebar.style.height = '100%';
+            } else {
+                sidebar.style.height = 'unset';
+            }
+            const tId = setTimeout(() => {
+                bar.style.overflow = 'auto';
+                clearTimeout(tId);
+            }, 500)
+        });
+    }
+    if (bar) {
+        bar.addEventListener('click', (e) => {
+            bar.style.overflow = 'hidden';
+            e.preventDefault();
+            e.stopPropagation();
+            offCanvas.hide();
+        });
+    }
 });

@@ -29,151 +29,105 @@
 </head>
 <body>
 
-    <div id="offcanvas-usage" class="new-leftsidebar" uk-offcanvas>
+    <div id="offcanvas-usage" class="new-leftsidebar" uk-offcanvas="{mode: none}">
         <div class="uk-offcanvas-bar">
-            <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
-           <a href="#" class="header-top__logo base-link leftsidebar-logo">
-                <img src="./img/common/logo.png" alt="logotype">
-                <span>Навигатор образования Владимирской области</span>
-            </a>
-            <ul id="main-menu" class="sm sm-clean left-sidebar__nav">
-                <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
-                    <ul>
-                      <li>
-                          <a href="#">Основные сведения</a>
-                      </li>
-                      <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
-                      <li><a href="#">Документы</a></li>
-                      <li><a href="#">Образование</a></li>
-                      <li><a href="#">Образовательные стандарты и требования</a></li>
-                      <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
-                      <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
-                      <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
-                      <li><a href="#">Платные образовательные услуги</a></li>
-                      <li><a href="#">Финансово-хозяйственная деятельность</a></li>
-                      <li><a href="#">Вакантные места для приема (перевода)</a></li>
-                      <li><a href="#">Доступная среда</a></li>
-                      <li><a href="#">Международное сотрудничество</a></li>
-                      <li><a href="#">Законодательная карта</a></li>
-                      <!-- <li>
-                          <a href="#">Item 2-2</a>
-                          <ul>
-                              <li><a href="#">Item 3-1</a></li>
-                              <li><a href="#">Item 3-2</a></li>
-                              <li><a href="#">Item 3-3</a></li>
-                            </ul>
-                      </li> -->
-                    </ul>
-                  </li>
-                <li><a href="#">Законодательная карта</a></li>
-                <li><a href="#">Доступная среда</a></li>
-                <li><a href="#">О колледже</a></li>
-                <li><a href="#">Научно-исследовательская деятельность</a></li>
-                <li><a href="#">Студенческая жизнь</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Новый раздел</a></li>
-                <li><a href="#">Новый раздел</a></li>
-                
-              </ul>
-            <!-- <ul id="menu">
-                <li><a href="#">Home</a>
-                    <ul class="drop">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">About us</a></li>
+            <div class="leftsidebar-wrap">
+                        <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
+                <a href="#" class="header-top__logo base-link leftsidebar-logo">
+                    <img src="./img/common/logo.png" alt="logotype">
+                    <span>Навигатор образования Владимирской области</span>
+                </a>
+                <ul id="main-menu" class="sm sm-clean left-sidebar__nav">
+                    <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
+                        <ul>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="#">Основные сведения</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2-2</a>
                             <ul>
-                                <li><a href="#">Sub Item 1</a></li>
-                                <li>
-                                    <a href="#">Sub Item 2</a>
-                                    <ul>
-                                        <li><a href="#">Sub item 3</a></li>
-                                        <li><a href="#">Sub item 4</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="#">Item 3-1</a></li>
+                                <li><a href="#">Item 3-2</a></li>
+                                <li><a href="#">Item 3-3</a></li>
                             </ul>
                         </li>
-                    </ul>
-                </li>
-            
-            
-                <li><a href="#">about</a>
-                    <ul class="drop">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <nav class="uk-navbar-container left-sidebar__nav">
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <a href="#" class="withchilds">Сведения об образовательной организации</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">Основные сведения</a></li>
-                                <li><a href="#">Структура и органы управления образовательной организацией</a></li>
-                                <li><a href="#">Документы</a></li>
-                                <li><a href="#">Образование</a></li>
-                                <li><a href="#">Образовательные стандарты и требования</a></li>
-                                <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
-                                <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
-                                <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
-                                <li><a href="#">Платные образовательные услуги</a></li>
-                                <li><a href="#">Финансово-хозяйственная деятельность</a></li>
-                                <li><a href="#">Вакантные места для приема (перевода)</a></li>
-                                <li><a href="#">Доступная среда</a></li>
-                                <li><a href="#">Международное сотрудничество</a></li>
-                                <li class="item-withchilds">
-                                    <a href="#" class="withchilds">Законодательная</a>
-                                    <div class="uk-navbar-dropdown" uk-dropdown="pos: right-top; offset: 30">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li>
-                                                <a href="#">Законодательная 2.2</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Законодательная 2.3</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Образовательные стандарты и требования</a></li>
+                        <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
+                        <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                        <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
+                        <li><a href="#">Платные образовательные услуги</a></li>
+                        <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                        <li><a href="#">Вакантные места для приема (перевода)</a></li>
+                        <li><a href="#">Доступная среда</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Законодательная карта</a></li>
                     <li><a href="#">Доступная среда</a></li>
                     <li><a href="#">О колледже</a></li>
                     <li><a href="#">Научно-исследовательская деятельность</a></li>
                     <li><a href="#">Студенческая жизнь</a></li>
-                    <li><a href="#">Новый раздел</a></li>
-                    <li><a href="#">Новый раздел</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
+                        <ul>
+                        <li>
+                            <a href="#">Основные сведения</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2-2</a>
+                            <ul>
+                                <li><a href="#">Item 3-1</a></li>
+                                <li><a href="#">Item 3-2</a></li>
+                                <li><a href="#">Item 3-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Образовательные стандарты и требования</a></li>
+                        <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
+                        <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                        <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
+                        <li><a href="#">Платные образовательные услуги</a></li>
+                        <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                        <li><a href="#">Вакантные места для приема (перевода)</a></li>
+                        <li><a href="#">Доступная среда</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
-            </nav> -->
-            <div class="leftsidebar-footer">
-                <div class="leftsidebar-footer__title">
-                    Контакты
+                <a href="#" class="close-offcanvas">
+                    Закрыть
+                    <i class="fa fa-close"></i>
+                </a>
+                <div class="leftsidebar-footer">
+                    <div class="leftsidebar-footer__title">
+                        Контакты
+                    </div>
+                    <ul class="reset_ul_ol">
+                        <li>
+                            <a href="tel:74922322542">
+                                <span>Телефон:</span>
+                                +7 (4922) 32-25-41
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@vamk33.ru">
+                                <span>Почта::</span>
+                                info@vamk33.ru
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                                600001, Россия, Владимирская область, г. Владимир, ул. Дворянская, д. 27
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="reset_ul_ol">
-                    <li>
-                        <a href="tel:74922322542">
-                            <span>Телефон:</span>
-                            +7 (4922) 32-25-41
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@vamk33.ru">
-                            <span>Почта::</span>
-                            info@vamk33.ru
-                        </a>
-                    </li>
-                    <li>
-                        <span>
-                            600001, Россия, Владимирская область, г. Владимир, ул. Дворянская, д. 27
-                        </span>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
