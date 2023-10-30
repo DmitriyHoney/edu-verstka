@@ -50,7 +50,7 @@
         &__link {
             &_act {
                 & a {
-                    background: $gradient-orange;
+                    background: $primary;
                     color: #fff !important;
                     border: none !important;
                     padding-top: 9px !important;
@@ -66,7 +66,7 @@
                 line-height: normal;
                 color: #9CA4B5;
                 border: 1px solid #B9BFCB;
-                border-radius: 85px;
+                border-radius: 8px;
                 transition: all .3s ease;
                 &:hover {
                     transition: all .3s ease;

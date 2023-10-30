@@ -83,14 +83,14 @@ function fonts() {
 }
 function images() {
     return src(path.src.img)
-        .pipe(
-            imagemin({
-                progressive: true,
-                svgoPlugins: [{ removeViewBox: false }],
-                interlaced: true,
-                optimizationLevel: 3
-            })
-        )
+        // .pipe(
+        //     imagemin({
+        //         progressive: true,
+        //         svgoPlugins: [{ removeViewBox: false }],
+        //         interlaced: true,
+        //         optimizationLevel: 3
+        //     })
+        // )
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
 }

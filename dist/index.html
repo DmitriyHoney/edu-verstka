@@ -23,33 +23,180 @@
     />
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/sm-core-css.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Проект образования</title>
 </head>
 <body>
+
+    <div id="offcanvas-usage" class="new-leftsidebar" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
+           <a href="#" class="header-top__logo base-link leftsidebar-logo">
+                <img src="./img/common/logo.png" alt="logotype">
+                <span>Навигатор образования Владимирской области</span>
+            </a>
+            <ul id="main-menu" class="sm sm-clean left-sidebar__nav">
+                <li class="main-menu__item_withchilds"><a href="#">Сведения об образовательной организации</a>
+                    <ul>
+                      <li>
+                          <a href="#">Основные сведения</a>
+                      </li>
+                      <li><a href="#">Структура и органы управления образовательной организациейa</a></li>
+                      <li><a href="#">Документы</a></li>
+                      <li><a href="#">Образование</a></li>
+                      <li><a href="#">Образовательные стандарты и требования</a></li>
+                      <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
+                      <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                      <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
+                      <li><a href="#">Платные образовательные услуги</a></li>
+                      <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                      <li><a href="#">Вакантные места для приема (перевода)</a></li>
+                      <li><a href="#">Доступная среда</a></li>
+                      <li><a href="#">Международное сотрудничество</a></li>
+                      <li><a href="#">Законодательная карта</a></li>
+                      <!-- <li>
+                          <a href="#">Item 2-2</a>
+                          <ul>
+                              <li><a href="#">Item 3-1</a></li>
+                              <li><a href="#">Item 3-2</a></li>
+                              <li><a href="#">Item 3-3</a></li>
+                            </ul>
+                      </li> -->
+                    </ul>
+                  </li>
+                <li><a href="#">Законодательная карта</a></li>
+                <li><a href="#">Доступная среда</a></li>
+                <li><a href="#">О колледже</a></li>
+                <li><a href="#">Научно-исследовательская деятельность</a></li>
+                <li><a href="#">Студенческая жизнь</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Новый раздел</a></li>
+                <li><a href="#">Новый раздел</a></li>
+                
+              </ul>
+            <!-- <ul id="menu">
+                <li><a href="#">Home</a>
+                    <ul class="drop">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li>
+                            <a href="#">About us</a>
+                            <ul>
+                                <li><a href="#">Sub Item 1</a></li>
+                                <li>
+                                    <a href="#">Sub Item 2</a>
+                                    <ul>
+                                        <li><a href="#">Sub item 3</a></li>
+                                        <li><a href="#">Sub item 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            
+            
+                <li><a href="#">about</a>
+                    <ul class="drop">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <nav class="uk-navbar-container left-sidebar__nav">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#" class="withchilds">Сведения об образовательной организации</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Основные сведения</a></li>
+                                <li><a href="#">Структура и органы управления образовательной организацией</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Образование</a></li>
+                                <li><a href="#">Образовательные стандарты и требования</a></li>
+                                <li><a href="#">Руководство Педагогический (научно-педагогический) состав</a></li>
+                                <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                                <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
+                                <li><a href="#">Платные образовательные услуги</a></li>
+                                <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                                <li><a href="#">Вакантные места для приема (перевода)</a></li>
+                                <li><a href="#">Доступная среда</a></li>
+                                <li><a href="#">Международное сотрудничество</a></li>
+                                <li class="item-withchilds">
+                                    <a href="#" class="withchilds">Законодательная</a>
+                                    <div class="uk-navbar-dropdown" uk-dropdown="pos: right-top; offset: 30">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li>
+                                                <a href="#">Законодательная 2.2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Законодательная 2.3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Законодательная карта</a></li>
+                    <li><a href="#">Доступная среда</a></li>
+                    <li><a href="#">О колледже</a></li>
+                    <li><a href="#">Научно-исследовательская деятельность</a></li>
+                    <li><a href="#">Студенческая жизнь</a></li>
+                    <li><a href="#">Новый раздел</a></li>
+                    <li><a href="#">Новый раздел</a></li>
+                </ul>
+            </nav> -->
+            <div class="leftsidebar-footer">
+                <div class="leftsidebar-footer__title">
+                    Контакты
+                </div>
+                <ul class="reset_ul_ol">
+                    <li>
+                        <a href="tel:74922322542">
+                            <span>Телефон:</span>
+                            +7 (4922) 32-25-41
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@vamk33.ru">
+                            <span>Почта::</span>
+                            info@vamk33.ru
+                        </a>
+                    </li>
+                    <li>
+                        <span>
+                            600001, Россия, Владимирская область, г. Владимир, ул. Дворянская, д. 27
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
     <header class="header">
         <div class="header-top">
             <div class="uk-container">
                 <div class="header-top__wrap">
-                    <ul class="header-top__links reset_ul_ol">
-                        <li class="header-top__link">
-                            <a href="#">Сведения об образовательной организации</a>
-                        </li>
-                        <li class="header-top__link">
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="header-top__actions reset_ul_ol">
-                        <li class="header-top__action">
-                            <a href="#" class="base-link">
-                                <span class="link-icon">
-                                    <img src="./img/common/icons/user.png" alt="user">
-                                </span>
-                                Личный кабинет
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="header-top__logotype-wrap">
+                        <a href="#" class="header-top__logo base-link">
+                            <img src="./img/common/logo.png" alt="logotype">
+                            <span>Навигатор образования Владимирской области</span>
+                        </a>
+                        <a href="#" class="base-link search-btn">
+                            <img src="./img/common/icons/search.png" alt="Поиск...">
+                        </a>
+                    </div>
+                    <a href="#" class="base-link outlined-link">
+                        <span class="link-icon">
+                            <img src="./img/common/icons/grey-eye.png" alt="eye">
+                        </span>
+                        Версия для слабовидящих
+                    </a>
                 </div>
             </div>
         </div>
@@ -57,30 +204,16 @@
             <div class="uk-container">
                 <div class="header-bottom__wrap">
                     <div class="header-bottom__logotype-wrap">
-                        <a href="#" class="header-bottom__menubtn">
+                        <a href="#offcanvas-overlay"  class="uk-button uk-button-default uk-margin-small-right header-bottom__menubtn" uk-toggle="target: #offcanvas-usage">
                             <img src="./img/common/icons/menu.svg" alt="menu">
                         </a>
                         <a href="#" class="header-bottom__logo base-link">
-                            <img src="./img/common/logo.png" alt="logotype">
-                            <span>ГБПОУ ВО «Муромский педагогический колледж»</span>
+                            <img src="./img/about/1.jpg" alt="logotype">
+                            <span>Государственное автономное профессиональное образовательное учреждение Владимирской области “Владимирский авиамеханический колледж”</span>
                         </a>
                     </div>
-                    <a href="#" class="base-link outlined-link outlined-link_lg">
-                        <span class="link-icon">
-                            <img src="./img/common/icons/blue-eye.png" alt="eye">
-                        </span>
-                        Версия для слабовидящих
-                    </a>
                     
                     <div class="header-bottom__actions">
-                        <a href="#" class="base-link">
-                            <img src="./img/common/icons/search.png" alt="Поиск...">
-                        </a>
-                        <a href="#" class="base-link outlined-link outlined-link_sm">
-                            <span class="link-icon">
-                                <img src="./img/common/icons/blue-eye.png" alt="eye">
-                            </span>
-                        </a>
                         <a href="#" class="base-link social">
                             <img src="./img/common/icons/vk.svg" alt="vk">
                         </a>
@@ -90,14 +223,111 @@
                         <a href="#" class="base-link social">
                             <img src="./img/common/icons/sferum.svg" alt="sferum">
                         </a>
+                        <a href="#" class="base-link social social-large">
+                            <img src="./img/common/icons/phone.png" alt="phone">
+                        </a>
                         <a href="#" class="base-link base-primary-btn">
                             <span class="link-icon">
-                                <img src="./img/common/icons/pc.png" alt="pc">
+                                <img src="./img/common/icons/user.png" alt="pc">
                             </span>
-                            Написать нам
+                            Личный кабинет
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="header-navigation">
+            <div class="uk-container">
+                <ul class="header-navigation__list reset_ul_ol">
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/beginners.png" alt="beginners"></span>
+                            Абитуриентам
+                        </a>
+                        <div class="header-navigation__menu">
+                            <div class="uk-container">
+                                <ul class="header-navigation__menu__list reset_ul_ol">
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item header-navigation__menu__list-item_childs">
+                                        <a href="#">Часто задаваемые вопросы</a>
+                                        <ul class="reset_ul_ol">
+                                            <li>
+                                                <a href="#">Контакты 1.1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Контакты 1.1</a>
+                                            </li>
+                                            <li class="header-navigation__menu__list-item header-navigation__menu__list-item_childs">
+                                                <a href="#">Контакты 1.1</a>
+                                                <ul class="reset_ul_ol">
+                                                    <li>
+                                                        <a href="#">Контакты 1.2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Контакты 1.2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Контакты 1.2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Законодательная карта</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Научно-исследовательская деятельность</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Часто задаваемые вопросы</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Законодательная карта</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Научно-исследовательская деятельность</a>
+                                    </li>
+                                    <li class="header-navigation__menu__list-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/students.png" alt="students"></span>
+                            Студентам
+                        </a>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/parents.png" alt="parents"></span>
+                            Родителям
+                        </a>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/employee.png" alt="employee"></span>
+                            Сотрудникам
+                        </a>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/partners.png" alt="partners"></span>
+                            Партнёрам
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -115,12 +345,18 @@
                         </p>
                         <div class="offer-slide__actions">
                             <a href="#" class="base-link base-primary-btn">
+                                Учись33
+                                <span>
+                                    <i class="fa fa-angle-double-right"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="base-link outlined-link outlined-link_primary">
                                 Смотреть направления
                                 <span>
                                     <i class="fa fa-angle-double-right"></i>
                                 </span>
                             </a>
-                            <a href="#" class="base-link outlined-link outlined-link_white">
+                            <a href="#" class="base-link outlined-link outlined-link_primary">
                                 Как поступить
                                 <span>
                                     <i class="fa fa-question-circle-o"></i>
@@ -129,10 +365,9 @@
                         </div>
                     </div>
                     <div class="offer-slide__bg">
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-main__square"></div>
+                        <div class="offer-slide-main__lines">
+                            <img src="./img/offer/slide1bg.png" alt="teen">
+                        </div>
                         <div class="offer-slide-main__bg">
                             <img src="./img/offer/teen.png" alt="teen">
                         </div>
@@ -143,69 +378,63 @@
                 <div class="uk-container">
                     <div class="offer-slide__content">
                         <h2 class="offer-slide__title">
-                            Качественное образование <span>сегодня 2</span>
+                            Слово директору
                         </h2>
-                        <p class="offer-slide__subtitle">
-                            Профессиональный успех - завтра 2
-                        </p>
+                        <p class="offer-slide__subtitle"></p>
                         <div class="offer-slide__actions">
                             <a href="#" class="base-link base-primary-btn">
-                                Смотреть направления
+                                Информация об организации
                                 <span>
                                     <i class="fa fa-angle-double-right"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="base-link outlined-link outlined-link_white">
-                                Как поступить
-                                <span>
-                                    <i class="fa fa-question-circle-o"></i>
                                 </span>
                             </a>
                         </div>
                     </div>
                     <div class="offer-slide__bg">
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-main__square"></div>
-                        <div class="offer-slide-main__bg">
-                            <img src="./img/offer/teen.png" alt="teen">
+                        
+                        <div class="offer-slide-main__lines">
+                            <img src="./img/offer/slide2bg.png" alt="slide2bg">
                         </div>
+                        <div class="offer-slide-additional-second">
+                            <img src="./img/offer/slide2additional.png" alt="slide2additional">
+                        </div>
+                    </div>
+                    <div class="offer-director">
+                        <div class="offer-director__image">
+                            <img src="./img/offer/director.png" alt="Director">
+                        </div>
+                        <h4 class="offer-director__title">Приветствую педагогов, учеников и родителей</h4>
+                        <p class="offer-director__text">
+                            Наш сайт - это место для интересного общения, несмотря на границы и расстояния. Мы - открытая школа. Нас часто посещают родители, гости, дети из других школ и из других городов. К нам всегда можно заглянуть для разговора. Для обсуждения проблем, личных и общих. Мы многое делаем для того, чтобы быть школой сотрудничества, в первую очередь с родителями. Очень надеемся, что круг наших друзей будет постоянно увеличиваться.
+                        </p>
+                        <p class="offer-director__job">И.о директора</p>
+                        <p class="offer-director__name">Крючкова Ольга Валентиновна</p>
                     </div>
                 </div>
             </div>
             <div class="offer-slide">
                 <div class="uk-container">
                     <div class="offer-slide__content">
-                        <h2 class="offer-slide__title">
-                            Качественное образование <span>сегодня 3</span>
-                        </h2>
-                        <p class="offer-slide__subtitle">
-                            Профессиональный успех - завтра 3
+                        <h2 class="offer-slide__title">О колледже</h2>
+                        <p class="offer-slide__about">
+                            Идейные соображения высшего порядка, а также реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. С другой стороны сложившаяся структура организации требуют от нас анализа направлений прогрессивного развития. С другой стороны дальнейшее развитие различных форм деятельности позволяет оценить значение систем массового участия
                         </p>
                         <div class="offer-slide__actions">
                             <a href="#" class="base-link base-primary-btn">
-                                Смотреть направления
-                                <span>
-                                    <i class="fa fa-angle-double-right"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="base-link outlined-link outlined-link_white">
-                                Как поступить
-                                <span>
-                                    <i class="fa fa-question-circle-o"></i>
-                                </span>
+                                Подробнее
                             </a>
                         </div>
                     </div>
-                    <div class="offer-slide__bg">
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-square"></div>
-                        <div class="offer-slide-main__square"></div>
-                        <div class="offer-slide-main__bg">
-                            <img src="./img/offer/teen.png" alt="teen">
-                        </div>
+                    <div class="offer-slide__video">
+                        <iframe src="https://www.youtube.com/embed/TEov7X-vnkM?si=Xwwo8CuH-opwugEj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="offer-slide__bg">
+                    <div class="offer-slide-main__lines">
+                        <img src="./img/offer/slide3bg.png" alt="teen">
+                    </div>
+                    <div class="offer-slide-additional-third">
+                        <img src="./img/offer/slide3additional.png" alt="teen">
                     </div>
                 </div>
             </div>
@@ -215,235 +444,254 @@
     <section class="start-section base-section">
         <div class="uk-container">
             <div class="start-section__wrap">
-                <div class="start-section__card">
+                <a href="#" class="start-section__card">
                     <div class="start-section__card-image">
-                        <img src="./img/startsection/abiturient.jpg" alt="card-image">
+                        <img src="./img/common/icons/college.svg" alt="college">
                     </div>
-                    <p class="start-section__card-subtitle">
-                        <img src="./img/common/icons/book.png" alt="book">
-                        Абитуриентам
-                    </p>
-                    <a href="#" class="base-link round-orange-link">
-                        <img src="./img/common/icons/learn-more.svg" alt="learn-more">
-                    </a>
-                </div>
-                <div class="start-section__card">
+                    <p>Поступление в колледж</p>
+                </a>
+                <a href="#" class="start-section__card">
                     <div class="start-section__card-image">
-                        <img src="./img/startsection/student.jpg" alt="card-image">
+                        <img src="./img/common/icons/calendar.svg" alt="calendar">
                     </div>
-                    <p class="start-section__card-subtitle">
-                        <img src="./img/common/icons/book.png" alt="book">
-                        Студентам
-                    </p>
-                    <a href="#" class="base-link round-orange-link">
-                        <img src="./img/common/icons/learn-more.svg" alt="learn-more">
-                    </a>
-                </div>
-                <div class="start-section__card">
+                    <p>Расписание,учебные периоды, каникулы</p>
+                </a>
+                <a href="#" class="start-section__card">
                     <div class="start-section__card-image">
-                        <img src="./img/startsection/parent.jpg" alt="card-image">
+                        <img src="./img/common/icons/document.svg" alt="document">
                     </div>
-                    <p class="start-section__card-subtitle">
-                        <img src="./img/common/icons/book.png" alt="book">
-                        Родителям
-                    </p>
-                    <a href="#" class="base-link round-orange-link">
-                        <img src="./img/common/icons/learn-more.svg" alt="learn-more">
-                    </a>
-                </div>
-                <div class="start-section__card">
+                    <p>Документы</p>
+                </a>
+                <a href="#" class="start-section__card">
                     <div class="start-section__card-image">
-                        <img src="./img/startsection/employee.jpg" alt="card-image">
+                        <img src="./img/common/icons/additional.svg" alt="additional">
                     </div>
-                    <p class="start-section__card-subtitle">
-                        <img src="./img/common/icons/book.png" alt="book">
-                        Сотрудникам
-                    </p>
-                    <a href="#" class="base-link round-orange-link">
-                        <img src="./img/common/icons/learn-more.svg" alt="learn-more">
-                    </a>
-                </div>
+                    <p>Дополнительные услуги</p>
+                </a>
+                <a href="#" class="start-section__card">
+                    <div class="start-section__card-image">
+                        <img src="./img/common/icons/meal.svg" alt="meal">
+                    </div>
+                    <p>Питание в колледже</p>
+                </a>
+                <a href="#" class="start-section__card">
+                    <div class="start-section__card-image">
+                        <img src="./img/common/icons/review.svg" alt="review">
+                    </div>
+                    <p>Отзывы</p>
+                </a>
+                <a href="#" class="start-section__card">
+                    <div class="start-section__card-image">
+                        <img src="./img/common/icons/additional.svg" alt="additional">
+                    </div>
+                    <p>УПК</p>
+                </a>
+                <a href="#" class="start-section__card">
+                    <div class="start-section__card-image">
+                        <img src="./img/common/icons/contacts.svg" alt="contacts">
+                    </div>
+                    <p>Контакты</p>
+                </a>
             </div>
         </div>
     </section>
+
     <section class="news-section base-section">
-        <span class="paralax3" data-rellax-percentage="0.5">
-            <img src="./img/paralax/3.png" alt="paralax3">
-        </span>
         <div class="uk-container">
-            <div class="news-section__title-wrap">
-                <h2 class="base-section__title">Что нового?</h2>
-                <a href="#" class="base-link">
-                    Все новости и анонсы 
-                    <img src="./img/common/icons/arrow-right.png" alt="">
-                </a>
+            <ul class="news-tabs uk-tab" data-uk-tab="{connect:'#my-id'}">
+                <li class="news-tabs__item"><a href="">АНОНСЫ</a></li>
+                <li class="news-tabs__item"><a href="">НОВОСТИ</a></li>
+            </ul>
+
+            <div class="switch-parent">
+                <span class="switch-label">Анонсы колледжа</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="switch-label switch-label_act">Анонсы министерства</span>
             </div>
-            <div class="news-wrap">
+
+            <div id="my-id" class="news-wrap uk-switcher uk-margin">
                 <div  class="news-list">
-                    <h3 class="news-list__title">Новости</h3>
+                    <a href="#" class="base-link news-btn-more">
+                        Все новости
+                        <img src="./img/common/icons/arrow-right.png" alt="">
+                    </a>
                     <div class="news-list__slider">
                         <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
-                            <div class="news-card__image">
-                                <img src="./img/news/1.png" alt="news-image" itemprop="image">
+                            <div class="news-card__image" itemprop="image" style="background: url('./img/news/1.png') no-repeat center top / cover;">
+                            </div>
+                            <div class="news-card__date">
+                                <img src="./img/common/icons/calendar.png" alt="calendar">
+                                <span itemprop="dateline">15.06.2023</span>
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="dateline">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
                                     Вниманию абитуриентов! Приходите к нам учиться 
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Подробнее
                                 </a>
                             </div>
                         </div>
                         <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
-                            <div class="news-card__image">
-                                <img src="./img/news/2.png" alt="news-image" itemprop="image">
+                            <div class="news-card__image" itemprop="image" style="background: url('./img/news/2.png') no-repeat center top / cover;">
+                            </div>
+                            <div class="news-card__date">
+                                <img src="./img/common/icons/calendar.png" alt="calendar">
+                                <span itemprop="dateline">15.06.2023</span>
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="dateline">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
                                     Летняя профильная смена: хроники второго дня
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Подробнее
                                 </a>
                             </div>
                         </div>
                         <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
-                            <div class="news-card__image">
-                                <img src="./img/news/1.png" alt="news-image" itemprop="image">
+                            <div class="news-card__image" itemprop="image" style="background: url('./img/news/1.png') no-repeat center top / cover;">
+                            </div>
+                            <div class="news-card__date">
+                                <img src="./img/common/icons/calendar.png" alt="calendar">
+                                <span itemprop="dateline">15.06.2023</span>
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="dateline">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
                                     Вниманию абитуриентов! Приходите к нам учиться 
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Подробнее
                                 </a>
                             </div>
                         </div>
                         <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
-                            <div class="news-card__image">
-                                <img src="./img/news/2.png" alt="news-image" itemprop="image">
+                            <div class="news-card__image" itemprop="image" itemprop="image" style="background: url('./img/news/4.png') no-repeat center top / cover;">
+                            </div>
+                            <div class="news-card__date">
+                                <img src="./img/common/icons/calendar.png" alt="calendar">
+                                <span itemprop="dateline">15.06.2023</span>
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="dateline">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
                                     Летняя профильная смена: хроники второго дня
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Подробнее
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="news-list">
-                    <h3 class="news-list__title">Анонсы</h3>
+                <div  class="news-list">
+                    <a href="#" class="base-link news-btn-more">
+                        Все анонсы
+                        <img src="./img/common/icons/arrow-right.png" alt="">
+                    </a>
                     <div class="news-list__slider">
-                        <div class="news-card" itemscope itemtype="http://schema.org/Event">
-                            <div class="news-card__image">
-                                <img src="./img/news/3.png" alt="news-image" itemprop="image">
+                        <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="news-card__image" itemprop="image" style="background: url('./img/news/1.png') no-repeat center top / cover;">
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="startDate">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
-                                    Летняя профильная смена: хроники второго дня
+                                    Посвящение в студенты
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <ul class="news-card__info reset_ul_ol">
+                                    <li class="news-card__info-item">
+                                        <span>Дата:</span>
+                                        <span>29 сентября 2023</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Время:</span>
+                                        <span>17:00</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Место:</span>
+                                        <span>Актовый зал (ауд. 101)</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Записаться
                                 </a>
                             </div>
                         </div>
-                        <div class="news-card">
-                            <div class="news-card__image" itemscope itemtype="http://schema.org/Event">
-                                <img src="./img/news/4.png" alt="news-image" itemprop="image">
+                        <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="news-card__image" itemprop="image" style="background: url('./img/news/2.png') no-repeat center top / cover;">
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="startDate">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
-                                    Летняя профильная смена: хроники второго дня
+                                    Посвящение в студенты
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <ul class="news-card__info reset_ul_ol">
+                                    <li class="news-card__info-item">
+                                        <span>Дата:</span>
+                                        <span>29 сентября 2023</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Время:</span>
+                                        <span>17:00</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Место:</span>
+                                        <span>Актовый зал (ауд. 101)</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Записаться
                                 </a>
                             </div>
                         </div>
-                        <div class="news-card" itemscope itemtype="http://schema.org/Event">
-                            <div class="news-card__image">
-                                <img src="./img/news/3.png" alt="news-image" itemprop="image">
+                        <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="news-card__image" itemprop="image" style="background: url('./img/news/1.png') no-repeat center top / cover;">
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="startDate">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
-                                    Летняя профильная смена: хроники второго дня
+                                    Посвящение в студенты
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <ul class="news-card__info reset_ul_ol">
+                                    <li class="news-card__info-item">
+                                        <span>Дата:</span>
+                                        <span>29 сентября 2023</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Время:</span>
+                                        <span>17:00</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Место:</span>
+                                        <span>Актовый зал (ауд. 101)</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Записаться
                                 </a>
                             </div>
                         </div>
-                        <div class="news-card">
-                            <div class="news-card__image" itemscope itemtype="http://schema.org/Event">
-                                <img src="./img/news/4.png" alt="news-image" itemprop="image">
+                        <div class="news-card" itemscope itemtype="http://schema.org/NewsArticle">
+                            <div class="news-card__image" itemprop="image" itemprop="image" style="background: url('./img/news/4.png') no-repeat center top / cover;">
                             </div>
                             <div class="news-card__content">
-                                <div class="news-card__date">
-                                    <img src="./img/common/icons/calendar.png" alt="calendar">
-                                    <span itemprop="startDate">15.06.2023</span>
-                                </div>
                                 <h4 class="news-card__title" itemprop="name">
-                                    Летняя профильная смена: хроники второго дня
+                                    Посвящение в студенты
                                 </h4>
-                                <a href="#" class="base-link base-primary-btn" itemprop="url">
-                                    Читать полностью
-                                    <span>
-                                        <i class="fa fa-angle-double-right"></i>
-                                    </span>
+                                <ul class="news-card__info reset_ul_ol">
+                                    <li class="news-card__info-item">
+                                        <span>Дата:</span>
+                                        <span>29 сентября 2023</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Время:</span>
+                                        <span>17:00</span>
+                                    </li>
+                                    <li class="news-card__info-item">
+                                        <span>Место:</span>
+                                        <span>Актовый зал (ауд. 101)</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Записаться
                                 </a>
                             </div>
                         </div>
@@ -457,50 +705,110 @@
         <div class="uk-container">
             <div class="info-wrap">
                 <div class="info-subscribe" itemscope itemtype="http://schema.org/LinkRole">
-                    <div class="info-subscribe-round_sm"></div>
-                    <div class="info-subscribe-round_sm"></div>
-                    <div class="info-subscribe-round_large"></div>
-                    <div class="info-subscribe-hand">
-                        <img src="./img/info/hand.png" alt="hand">
-                    </div>
                     <div class="info-subscribe-image">
                         <img src="./img/info/phone.png" alt="phone">
                     </div>
-                    <div class="info-subscribe-vk">
-                        <div class="info-subscribe-vk__qr">
-                            <img src="./img/info/qr.jpg" alt="qrcode" itemprop="image">
-                        </div>
-                        <div class="info-subscribe-vk__content">
-                            <div class="info-subscribe-vk__title">
-                                <div class="social-icon">
-                                    <img src="./img/common/icons/vk.svg" alt="vk">
-                                </div>
-                                <p>Сообщество ВК</p>
+                    <div class="info-subscribe__content">
+                        <h3 class="info-subscribe__title">пОДПИШИТЕСЬ НА НАШИ СООБЩЕСТВА</h3>
+                        <p class="info-subscribe__subtitle">
+                            Министерство образования и молодежной полдитики в соцсетях
+                        </p>
+                        <ul class="info-subscribe__social reset_ul_ol">
+                            <li class="info-subscribe__social-item">
+                                <a href="#">
+                                    <div class="info-subscribe__social-item__image info-subscribe__social-item__image_vk">
+                                        <img src="./img/common/icons/vk.svg" alt="vk">
+                                    </div>
+                                    <span>
+                                        сообщество ВК <i class="fa fa-angle-double-right"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="info-subscribe__social-item">
+                                <a href="#">
+                                    <div class="info-subscribe__social-item__image info-subscribe__social-item__image_ok">
+                                        <img src="./img/common/icons/ok.svg" alt="ok">
+                                    </div>
+                                    <span>
+                                        группа в Одноклассниках <i class="fa fa-angle-double-right"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="info-subscribe__social-item">
+                                <a href="#">
+                                    <div class="info-subscribe__social-item__image info-subscribe__social-item__image_tg">
+                                        <img src="./img/common/icons/tg.svg" alt="tg">
+                                    </div>
+                                    <span>
+                                        канал в Телеграме <i class="fa fa-angle-double-right"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-subscribe__slider">
+                        <div class="info-subscribe__slide">
+                            <div class="info-subscribe__slide__image">
+                                <img src="./img/info/rf.png" alt="img">
                             </div>
-                            <p class="info-subscribe-vk__subtitle" itemprop="description">
-                                Министерство образования и молодежной политики
-                            </p>
-                            <a href="#" class="info-subscribe-vk__btn" itemprop="url">
-                                Присоединяйтесь к нам!
-                            </a>
+                            <div class="info-subscribe__slide__text">
+                                <h4>Объясняем РФ</h4>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Присоединиться
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-subscribe__slide">
+                            <div class="info-subscribe__slide__image">
+                                <img src="./img/info/sferum.png" alt="img">
+                            </div>
+                            <div class="info-subscribe__slide__text">
+                                <h4>Сферум</h4>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Присоединиться
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-subscribe__slide">
+                            <div class="info-subscribe__slide__image">
+                                <img src="./img/info/rf.png" alt="img">
+                            </div>
+                            <div class="info-subscribe__slide__text">
+                                <h4>Объясняем РФ</h4>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Присоединиться
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-subscribe__slide">
+                            <div class="info-subscribe__slide__image">
+                                <img src="./img/info/sferum.png" alt="img">
+                            </div>
+                            <div class="info-subscribe__slide__text">
+                                <h4>Сферум</h4>
+                                <a href="#" class="base-link base-primary-btn base-primary-btn_primary" itemprop="url">
+                                    Присоединиться
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="info-links">
                     <div class="info-link" itemscope itemtype="http://schema.org/LinkRole">
                         <div class="info-link__head">
-                            <div class="info-link__head-logo">
-                                <img src="./img/info/link1.png" alt="link1" itemprop="image">
-                            </div>
                             <a href="sn.sfr.gov.ru" class="info-link__head-href" itemprop="url">
                                 sn.sfr.gov.ru
-                                <img src="./img/common/icons/round-arrow-right.png" alt="round-arrow-right">
+                                <img src="./img/common/icons/round-arrow-purple.png" alt="round-arrow-right">
                             </a>
                         </div>
                         <div class="info-link__content">
                             <div class="info-link__content-image">
                                 <img src="./img/info/link1image.png" alt="link1image">
+                                <div class="info-link__head-logo">
+                                    <img src="./img/info/link1.png" alt="link1" itemprop="image">
+                                </div>
                             </div>
+                            
                             <div class="info-link__content-intro">
                                 <h3 class="info-link__content-intro-title" itemprop="name">
                                     Навигатор абитуриента: Колледжи России 2023
@@ -517,17 +825,70 @@
                     </div>
                     <div class="info-link" itemscope itemtype="http://schema.org/LinkRole">
                         <div class="info-link__head">
-                            <div class="info-link__head-logo">
-                                <img src="./img/info/link2.png" alt="link2" itemprop="image">
-                            </div>
                             <a href="sn.sfr.gov.ru" class="info-link__head-href" itemprop="url">
                                 sn.sfr.gov.ru
-                                <img src="./img/common/icons/round-arrow-right.png" alt="round-arrow-right">
+                                <img src="./img/common/icons/round-arrow-purple.png" alt="round-arrow-right">
                             </a>
                         </div>
                         <div class="info-link__content">
                             <div class="info-link__content-image">
                                 <img src="./img/info/link2image.png" alt="link2image">
+                                <div class="info-link__head-logo">
+                                    <img src="./img/info/link2.png" alt="link2" itemprop="image">
+                                </div>
+                            </div>
+                            <div class="info-link__content-intro">
+                                <h3 class="info-link__content-intro-title" itemprop="name">
+                                    Год педагога и наставника
+                                </h3>
+                                <div class="info-link__content-intro-stat" itemprop="description">
+                                    <p>Миссия Года — признать особый статус педагогических работников, в том числе осуществляющих наставническую деятельность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-link" itemscope itemtype="http://schema.org/LinkRole">
+                        <div class="info-link__head">
+                            <a href="sn.sfr.gov.ru" class="info-link__head-href" itemprop="url">
+                                sn.sfr.gov.ru
+                                <img src="./img/common/icons/round-arrow-purple.png" alt="round-arrow-right">
+                            </a>
+                        </div>
+                        <div class="info-link__content">
+                            <div class="info-link__content-image">
+                                <img src="./img/info/link1image.png" alt="link1image">
+                                <div class="info-link__head-logo">
+                                    <img src="./img/info/link1.png" alt="link1" itemprop="image">
+                                </div>
+                            </div>
+                            
+                            <div class="info-link__content-intro">
+                                <h3 class="info-link__content-intro-title" itemprop="name">
+                                    Навигатор абитуриента: Колледжи России 2023
+                                </h3>
+                                <div class="info-link__content-intro-stat" itemprop="description">
+                                    <div>
+                                        <img src="./img/info/infostat1.png" alt="infostat1">
+                                    </div>
+                                    <div>+200</div>
+                                    <p>колледжей на платформе</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-link" itemscope itemtype="http://schema.org/LinkRole">
+                        <div class="info-link__head">
+                            <a href="sn.sfr.gov.ru" class="info-link__head-href" itemprop="url">
+                                sn.sfr.gov.ru
+                                <img src="./img/common/icons/round-arrow-purple.png" alt="round-arrow-right">
+                            </a>
+                        </div>
+                        <div class="info-link__content">
+                            <div class="info-link__content-image">
+                                <img src="./img/info/link2image.png" alt="link2image">
+                                <div class="info-link__head-logo">
+                                    <img src="./img/info/link2.png" alt="link2" itemprop="image">
+                                </div>
                             </div>
                             <div class="info-link__content-intro">
                                 <h3 class="info-link__content-intro-title" itemprop="name">
@@ -545,8 +906,8 @@
     </section>
 
     <section class="subscribe-section">
-        <span class="paralax1" data-rellax-percentage="0.5">
-            <img src="./img/paralax/1.png" alt="paralax1">
+        <span class="subscribe-section_bg">
+            <img src="./img/subscribe/bg.png" alt="bg">
         </span>
         <div class="uk-container">
             <div class="subscribe-wrap">
@@ -557,7 +918,7 @@
                         </div>
                         <a href="pos.gosuslugi.ru" class="subscribe-card__head-href" itemprop="url">
                             pos.gosuslugi.ru
-                            <img src="./img/common/icons/round-arrow-right.png" alt="round-arrow-right">
+                            <img src="./img/common/icons/round-arrow-purple.png" alt="round-arrow-right">
                         </a>
                     </div>
                     <div class="subscribe-card__content">
@@ -578,7 +939,7 @@
                         </div>
                         <a href="pos.gosuslugi.ru" class="subscribe-card__head-href" itemprop="url">
                             pos.gosuslugi.ru
-                            <img src="./img/common/icons/round-arrow-right.png" alt="round-arrow-right">
+                            <img src="./img/common/icons/round-arrow-purple.png" alt="round-arrow-right">
                         </a>
                     </div>
                     <div class="subscribe-card__content">
@@ -602,7 +963,7 @@
                         </div>
                         <a href="pos.gosuslugi.ru" class="subscribe-card__head-href" itemprop="url">
                             pos.gosuslugi.ru
-                            <img src="./img/common/icons/round-arrow-right.png" alt="round-arrow-right">
+                            <img src="./img/common/icons/round-arrow-purple.png" alt="round-arrow-right">
                         </a>
                     </div>
                     <div class="subscribe-card__content">
@@ -622,7 +983,7 @@
 
     <section class="base-section about-section">
         <div class="uk-container">
-            <h2 class="base-section__title">Давайте знакомиться</h2>
+            <h2 class="base-section__title">О колледже</h2>
             <div class="about-card" itemscope itemtype="http://schema.org/Organization">
                 <div class="about-card__intro">
                     <div class="about-card__content">
@@ -636,6 +997,9 @@
                     </a>
                 </div>
                 <ul class="about-card__links reset_ul_ol">
+                    <li class="about-card__link">
+                        <a href="#">Сведения об образовательной организации</a>
+                    </li>
                     <li class="about-card__link about-card__link_act">
                         <a href="#">Галерея</a>
                     </li>
@@ -647,12 +1011,6 @@
                     </li>
                     <li class="about-card__link">
                         <a href="#">Сотрудничество</a>
-                    </li>
-                    <li class="about-card__link">
-                        <a href="#">Мероприятия</a>
-                    </li>
-                    <li class="about-card__link">
-                        <a href="#">Специальности</a>
                     </li>
                 </ul>
                 <div class="about-card__slider">
@@ -686,9 +1044,6 @@
     </section>
 
     <section class="base-section usefull-section">
-        <span class="paralax2" data-rellax-percentage="0.5">
-            <img src="./img/paralax/2.png" alt="paralax2">
-        </span>
         <div class="uk-container">
             <h2 class="base-section__title">Ресурсы и информационные системы  в сфере образования</h2>
             <div class="usefull-base-wrap">
@@ -789,6 +1144,15 @@
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card__image">
+                    <img src="./img/info/info.png" alt="учись 33">
+                </div>
+                <div class="info-card__title">УЧИСЬ ВО ВЛАДИМИРСКОЙ ОБЛАСТИ</div>
+                <a href="#" class="base-link base-link_white">
+                    Написать о проблеме
+                </a>
             </div>
         </div>
     </section>
@@ -985,7 +1349,7 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.smartmenus.min.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 </html>

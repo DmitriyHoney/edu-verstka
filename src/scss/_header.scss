@@ -1,7 +1,28 @@
 .header {
     &-top {
-        background-color: $primary;
-        padding: 9px 0px;
+        background-color: #F4F4F6;
+        padding: 24px 0px;
+        &__logo {
+            & img {
+                margin-right: 8px;
+            }
+            & span {
+                color: var(--dark-23272-f, #23272F);
+                font-family: Manrope;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+        &__logotype-wrap {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            & .search-btn {
+                flex-shrink: 0;
+            }
+        }
         &__wrap {
             display: flex;
             justify-content: space-between;
@@ -37,8 +58,13 @@
     }
     &-bottom {
         &__logo {
+            width: 70%;
             & img {
+                width: 55px;
+                height: 55px;
+                object-fit: cover;
                 margin-right: 8px;
+                border-radius: 8px;
             }
             & span {
                 color: var(--dark-23272-f, #23272F);
@@ -64,6 +90,7 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            flex-shrink: 0;
             & a.social {
                 display: flex;
                 align-items: center;
@@ -72,6 +99,39 @@
                 width: 34px;
                 height: 34px;
                 border-radius: 100%;
+                &-large {
+                    width: 54px;
+                    height: 54px;
+                }
+            }
+        }
+    }
+    &-navigation {
+        padding: 24px;
+        background-color: #E5CBF7;
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            
+            & a {
+                background: $gradient-primary;
+                box-shadow: 8px 8px 16px 0px rgba(197, 136, 237, 0.50);
+                border-radius: 8px;
+                color: #fff;;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 16px 32px;
+                & span {
+                    flex-shrink: 0;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }

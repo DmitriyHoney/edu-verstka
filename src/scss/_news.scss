@@ -1,14 +1,11 @@
 .news-section {
-    background: #F7F8FF;
+    background: #fff;
     position: relative;
     & > .uk-container {
         position: relative;
     }
     & .uk-tab {
-        position: absolute;
-        top: 5px;
-        left: 376px;
-        margin: 0px;
+        margin-left: 0px;
         &::before {
             display: none;
         }
@@ -18,7 +15,7 @@
 .news {
     &-wrap {
         display: flex;
-        margin-top: 32px;
+        margin-top: 32px !important;
         margin-bottom: 34px;
         gap: 32px;
     }
@@ -28,15 +25,25 @@
         gap: 32px;
     }
     &-list {
-        width: 50%;
+        width: 100%;
         background-color: #fff;
-        padding: 32px;
-        box-shadow: 0px 4px 71px 0px rgba(0, 0, 0, 0.06);
         border-radius: 16px;
+        & .news-btn-more {
+            position: absolute;
+            right: 50px;
+            top: 0px;
+            transform: translateY(50%);
+            color: $primary;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+        }
         &__slider {
                 position: relative;
-                margin-top: 32px;
                 margin-bottom: 32px;
+                display: flex;
+                gap: 32px;
+                flex-wrap: wrap;
                 & .slick-arrow {
                     position: absolute;
                     bottom: -45px;
@@ -119,43 +126,79 @@
         }
     }
     &-card {
-        width: calc(50% - 24px);
+        width: calc(25% - 24px);
         background-color: #FBF7FE;
         display: flex;
         flex-direction: column;
         border-radius: 16px;
         align-items: baseline;
-        margin: 0px 16px;
+        justify-content: flex-end;
+        position: relative;
+        min-height: 550px;
+        padding: 32px;
+        &__info {
+            margin-bottom: 16px;
+            &-item {
+                display: flex;
+                gap: 4px;
+                font-size: 14px;
+                & span:first-child {
+                    color: $primary;
+                    font-weight: bold;
+                }
+                & span:last-child {
+
+                }
+            }
+        }
         &__image {
             width: 100%;
-            height: 300px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border-radius: 16px;
+            &::after {
+                content: '';
+                border-radius: 16px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background: rgba(0, 0, 0, .35);
+            }
             & img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 16px;
                 border-radius: 16px 16px 0px 0px;
             }
         }
         &__content {
-            background-color: #FBF7FE;
             padding: 32px;
-            border-radius: 0px 0px 16px 16px;
             width: 100%;
+            z-index: 111;
+            border-radius: 8px;
+            background: linear-gradient(94deg, rgba(145, 122, 235, 0.09) 0%, rgba(235, 44, 67, 0.09) 100%), rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(4px);
         }
         &__date {
+            border-radius: 4px;
+            border: 1px solid #FFF;
             padding: 8px 16px;
-            border-radius: 43px;
-            border: 1px solid $primary;
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: $primary;
+            color: #FFF;
             font-family: Montserrat;
             font-size: 14px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
             margin-bottom: 16px;
+            margin-top: auto;
+            z-index: 111;
         }
         &__title {
             color:  #23272F;
@@ -170,11 +213,15 @@
             display: inline-flex;
         }
     }
+    & .uk-container {
+        position: relative;
+    }
     &-tabs {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 16px;
         &__item {
+            padding-left: 0;
             &.uk-active {
                 & a {
                     background: $gradient-orange !important;
@@ -185,7 +232,7 @@
             & a {
                 display: inline-block;
                 padding: 8px 32px;
-                border-radius: 53px;
+                border-radius: 8px;
                 border: 2px solid var(--dark-lb-9-bfcb, #B9BFCB);
                 background: #FFF;
                 color: var(--dark-l-9-ca-4-b-56, #9CA4B5);

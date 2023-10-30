@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Проект образования: ГБПОУ ВО «Муромский педагогический колледж»"/>
+    <meta property="og:image" content="./img/meta/1.png"/>
+    <meta property="og:type" content="organization"/>
+    <meta property="og:locale" content="ru_RU" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Проект образования</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-top">
+            <div class="uk-container">
+                <div class="header-top__wrap">
+                    <div class="header-top__logotype-wrap">
+                        <a href="#" class="header-top__logo base-link">
+                            <img src="./img/common/logo.png" alt="logotype">
+                            <span>Навигатор образования Владимирской области</span>
+                        </a>
+                        <a href="#" class="base-link search-btn">
+                            <img src="./img/common/icons/search.png" alt="Поиск...">
+                        </a>
+                    </div>
+                    <a href="#" class="base-link outlined-link">
+                        <span class="link-icon">
+                            <img src="./img/common/icons/grey-eye.png" alt="eye">
+                        </span>
+                        Версия для слабовидящих
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="uk-container">
+                <div class="header-bottom__wrap">
+                    <div class="header-bottom__logotype-wrap">
+                        <a href="#" class="header-bottom__menubtn">
+                            <img src="./img/common/icons/menu.svg" alt="menu">
+                        </a>
+                        <a href="#" class="header-bottom__logo base-link">
+                            <img src="./img/about/1.jpg" alt="logotype">
+                            <span>Государственное автономное профессиональное образовательное учреждение Владимирской области “Владимирский авиамеханический колледж”</span>
+                        </a>
+                    </div>
+                    
+                    <div class="header-bottom__actions">
+                        <a href="#" class="base-link social">
+                            <img src="./img/common/icons/vk.svg" alt="vk">
+                        </a>
+                        <a href="#" class="base-link social">
+                            <img src="./img/common/icons/ok.svg" alt="ok">
+                        </a>
+                        <a href="#" class="base-link social">
+                            <img src="./img/common/icons/sferum.svg" alt="sferum">
+                        </a>
+                        <a href="#" class="base-link social social-large">
+                            <img src="./img/common/icons/phone.png" alt="phone">
+                        </a>
+                        <a href="#" class="base-link base-primary-btn">
+                            <span class="link-icon">
+                                <img src="./img/common/icons/user.png" alt="pc">
+                            </span>
+                            Личный кабинет
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navigation">
+            <div class="uk-container">
+                <ul class="header-navigation__list reset_ul_ol">
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/beginners.png" alt="beginners"></span>
+                            Абитуриентам
+                        </a>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/students.png" alt="students"></span>
+                            Студентам
+                        </a>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/parents.png" alt="parents"></span>
+                            Родителям
+                        </a>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/employee.png" alt="employee"></span>
+                            Сотрудникам
+                        </a>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="#">
+                            <span><img src="./img/header/partners.png" alt="partners"></span>
+                            Партнёрам
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs-wrap">
+        <div class="uk-container">
+            <ul class="uk-breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><span>Регистрация</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="base-section register-section">
+        <div class="uk-container">
+            <h2 class="base-section__title">
+                Регистрация нового пользователя
+            </h2>
+            <form class="register-form">
+                <div class="register-form__wrap">
+                    <div class="base-input">
+                        <label for="login">Логин*:</label>
+                        <input id="login" type="text">
+                    </div>
+                    <div class="base-input">
+                        <label for="firstname">Имя*:</label>
+                        <input id="firstname" type="text">
+                    </div>
+                    <div class="base-input">
+                        <label for="email">Email*:</label>
+                        <input id="email" type="email">
+                    </div>
+                    <div class="base-input">
+                        <label for="lastname">Фамилия*:</label>
+                        <input id="lastname" type="text">
+                    </div>
+                    <div class="base-input base-input_pwd base-input_hide">
+                        <label for="password">Пароль*:</label>
+                        <div class="base-input_pwd-wrap">
+                            <input id="password" type="password">
+                            <a href="#" class="hide-pwd__icon">
+                                <i class="fa fa-eye-slash"></i>
+                            </a>
+                            <a href="#" class="show-pwd__icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="base-input base-input_captcha">
+                        <label for="captcha">Введите слово с картинки*:</label>
+                        <input id="captcha" type="text">
+                    </div>
+                    <div class="base-input base-input_pwd base-input_hide">
+                        <label for="password">Подтверждение пароля*:</label>
+                        <div class="base-input_pwd-wrap">
+                            <input id="password" type="password">
+                            <a href="#" class="hide-pwd__icon">
+                                <i class="fa fa-eye-slash"></i>
+                            </a>
+                            <a href="#" class="show-pwd__icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="base-checkbox">
+                        <label class="container">
+                            Нажимая кнопку «Регистрация», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="register-form__actions">
+                    <a href="#" class="base-link base-primary-btn">
+                        Регистрация
+                    </a>
+                    <div class="register-form__rules">
+                        <span>
+                            Пароль должен быть не менее 6 символов длиной.
+                        </span>
+                        <span>
+                            *Поля, обязательные для заполнения.
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="uk-container">
+            <div class="footer-wrap uk-grid-medium" uk-grid>
+                <div class="uk-width-1-4@m">
+                    <div class="footer-meta">
+                        <a href="#" class="footer-meta__logo">
+                            ГБПОУ ВО «Муромский педагогический колледж»
+                        </a>
+                        <p class="footer-meta__rules">
+                            ©2017 - 2023 Министерство образования и молодежной политики Владимирской области. Все права защищены.
+                        </p>
+                        <a href="#" class="footer-meta__personal">
+                            Обработка персональных данных на сайте ведется 
+                            в соответствии <span>152-ФЗ</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list reset_ul_ol">
+                            <h4 class="footer-nav__title">Информация</h4>
+                            <li class="footer-nav__item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Часто задаваемые вопросы</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Законодательная карта</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Научно-исследовательская деятельность</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list reset_ul_ol">
+                            <h4 class="footer-nav__title">Студентам</h4>
+                            <li class="footer-nav__item">
+                                <a href="#">Расписание звонков</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Расписание Занятий</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Аттестация</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Практика</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Методические материалы</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Объявления</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list reset_ul_ol">
+                            <h4 class="footer-nav__title">Абитуриентам</h4>
+                            <li class="footer-nav__item">
+                                <a href="#">Сроки поступления</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Список документов для поступления</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Направления обучения</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Списки поступивших</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list reset_ul_ol">
+                            <h4 class="footer-nav__title">Сотрудникам</h4>
+                            <li class="footer-nav__item">
+                                <a href="#">Аттестация</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Методические материалы</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Объявления</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Педагогическая копилка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="uk-width-1-4@m">
+                    <div class="footer-nav__contacts">
+                        <ul class="footer-nav__list reset_ul_ol">
+                            <h4 class="footer-nav__title">Контактная информация</h4>
+                            <li class="footer-nav__item">
+                                <a href="mailto:info@vamk33.ru" class="base-link">
+                                    <img src="./img/common/icons/email.png" alt="email">
+                                    info@vamk33.ru
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="tel:84922545352" class="base-link">
+                                    <img src="./img/common/icons/email.png" alt="email">
+                                    8 (492) 254-53-52
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="base-link">
+                                    <img src="./img/common/icons/map-marker.png" alt="map">
+                                    ул. Офицерская, 12, Владимир, Владимирская обл., 600001
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list reset_ul_ol">
+                            <h4 class="footer-nav__title">Режим работы</h4>
+                            <li class="footer-nav__item">
+                                <a href="#" class="base-link">
+                                    <img src="./img/common/icons/clock.png" alt="clock">
+                                    пн-вс с 10.00 до 20.00
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
