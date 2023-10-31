@@ -1261,3 +1261,153 @@ div[title="Двойной щелчок - Добавить элемент"]{
         display: flex;
     }
 }
+
+// style for basic-info 1
+/* Customize the label (the container-eye) */
+.container-eye {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-eye input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-color: transparent;
+    background-image: url(../img/common/eye-hide.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-eye:hover input ~ .checkmark {
+    background-color: transparent;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-eye input:checked ~ .checkmark {
+    background-image: url(../img/common/eye-green.png);
+  }
+  
+  
+  /* Show the checkmark when checked */
+  .container-eye input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+.base-input {
+    & label {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.base-input__manage {
+    display: flex;
+    align-items: center;
+    & .container-eye {
+        display: block;
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+    & .switch {
+        flex-shrink: 0;
+    display: block;
+    flex-shrink: 0;
+    }
+    & label {
+        display: block;
+    }
+}
+
+.switch-green {
+    transform: rotate(360deg);
+    height: 20px;
+    width: 40px;
+    & input:checked + .slider {
+        background-color: #00BD2A;
+    }
+    .slider:before {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.base-input__actions {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.base-btn {
+    cursor: pointer;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    border-radius: 8px;
+    transition: all .3s ease;
+    margin-top: 8px;
+    &:hover {
+        text-decoration: none;
+    }
+    &__ghost {
+        color: #EF544A;
+        border: 1px solid #EF544A;
+        &:hover {
+            transition: all .3s ease;
+            background-color: #EF544A;
+            color: #fff;
+        }
+    }
+    &__success {
+        color: #fff;
+        border: 1px solid #00BD2A;
+        background-color: #00BD2A;
+        &:hover {
+            background-color: darken(#00BD2A, 5%);
+            color: #fff;
+        }
+    }
+    &__danger {
+        color: #fff;
+        border: 1px solid #EB281B;
+        background-color: #EB281B;
+        &:hover {
+            background-color: darken(#EB281B, 5%);
+            color: #fff;
+        }
+    }
+}
+
+.manage-block__btn {
+    text-align: center;
+    margin-top: 24px;
+}
