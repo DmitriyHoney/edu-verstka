@@ -866,11 +866,11 @@ div[title="Двойной щелчок - Добавить элемент"]{
 
 .header-navigation__menu__list {
     &-item_childs {
-        &:hover {
-            & > ul {
-                display: flex !important;
-            }
-        }
+        // &:hover {
+        //     & > ul {
+        //         display: flex !important;
+        //     }
+        // }
         & > ul {
             top: 0px;
             padding-left: 16px;
@@ -1162,14 +1162,23 @@ div[title="Двойной щелчок - Добавить элемент"]{
                         color: #EB281B;
                     }
                 }
-                &::after {
+                &.has::after {
                     content: "\f105";
                     font: normal normal normal 14px/1 FontAwesome;
                     display: block;
                     font-size: 25px;
-                    opacity: 0;
+                    opacity: 1;
                     transition: all ease .3s;
-                    color: #EB281B;
+                    color: #23272F;
+                }
+                &.has-submenu::after {
+                    content: "\f105";
+                    font: normal normal normal 14px/1 FontAwesome;
+                    display: block;
+                    font-size: 25px;
+                    opacity: 1;
+                    transition: all ease .3s;
+                    color: #23272F;
                 }
                 
             }
@@ -1405,9 +1414,34 @@ div[title="Двойной щелчок - Добавить элемент"]{
             color: #fff;
         }
     }
+    &__grey {
+        color: #DADADA;
+        border: 1px solid #DADADA;
+        &:hover {
+            transition: all .3s ease;
+            background-color: #DADADA;
+            color: #fff;
+        }
+    }
 }
 
 .manage-block__btn {
     text-align: center;
     margin-top: 24px;
+}
+
+.header-navigation__menu__list {
+    &-item_childs {
+        & > ul {
+            display: none !important;
+        }
+    }
+}
+
+.header-navigation__menu__list-item_childs {
+    &_act {
+        & > ul {
+            display: flex !important;
+        }
+    }
 }
