@@ -4865,7 +4865,7 @@ input:checked + .slider:before {
 }
 
 /* Create a custom checkbox */
-.checkmark {
+.container-eye .checkmark {
   position: absolute;
   top: 0;
   left: 0;
