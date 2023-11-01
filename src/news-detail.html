@@ -24,9 +24,85 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blind.css">
     <title>Проект образования</title>
 </head>
 <body>
+
+    <div class="wi-special-sblock" data-wisenable="N" style="display: block;">
+		<div class="wi-special-settings">
+			<div class="wi-special-block">
+				<div class="wi-special-title">Размер шрифта</div>
+				<div class="wi-special-data">
+					<div class="wi-special-size" data-wisname="size">
+						<div data-wisparam="small" onclick='WISP.setClass({"size": "small"})' title="Уменьшенный размер шрифта" class="wi-special-small"><span>a</span></div>
+						<div data-wisparam="medium" onclick='WISP.setClass({"size": "medium"})' title="Нормальный размер шрифта" class="wi-special-medium"><span>a</span></div>
+						<div data-wisparam="large" onclick='WISP.setClass({"size": "large"})' title="Увеличенный размер шрифта" class="wi-special-large" style="line-height: 45px !important;"><span>a</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="wi-special-block">
+				<div class="wi-special-title">Цвет шрифта</div>
+				<div class="wi-special-data">
+					<div class="wi-special-color" data-wisname="color">
+						<div data-wisparam="bw" onclick='WISP.setClass({"color": "bw"})' title="Черным по белому" class="wi-special-black"><span>c</span></div>
+						<div data-wisparam="yb" onclick='WISP.setClass({"color": "yb"})' title="Желтым по черному" class="wi-special-yellow"><span>c</span></div>
+						<div data-wisparam="bb" onclick='WISP.setClass({"color": "bb"})' title="Синим по голубому" class="wi-special-blue"><span>c</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="wi-special-block">
+				<div class="wi-special-title">Изображения</div>
+				<div class="wi-special-data">
+					<div class="wi-special-image" data-wisname="image">
+						<div data-wisparam="gray" onclick='WISP.setClass({"image": "gray"})' title="Преобразовать изображения в черно белый формат" class="wi-special-gray">Черно белые</div>
+						<div data-wisparam="on" onclick='WISP.setClass({"image": "on"})' title="Отобразить изображения и фоновые картинки" class="wi-special-on">Показать</div>
+						<div data-wisparam="off" onclick='WISP.setClass({"image": "off"})' title="Скрыть изображения и фоновые картинки" class="wi-special-off">Скрыть</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="wi-special-block">
+				<div class="wi-special-title">Интервал букв</div>
+				<div class="wi-special-data">
+					<div class="wi-special-image" data-wisname="kerning">
+						<div data-wisparam="standart" onclick='WISP.setClass({"kerning": "standart"})' title="Стандартный" class="wi-special-kstandart">Стандартный</div>
+						<div data-wisparam="medium" onclick='WISP.setClass({"kerning": "medium"})' title="Средний" class="wi-special-kmedium">Средний</div>
+						<div data-wisparam="large" onclick='WISP.setClass({"kerning": "large"})' title="Большой" class="wi-special-klarge">Большой</div>
+					</div>
+				</div>
+			</div>
+			<div class="wi-special-block">
+				<div class="wi-special-title">Межстрочный интервал</div>
+				<div class="wi-special-data">
+					<div class="wi-special-image" data-wisname="interval">
+						<div data-wisparam="one" onclick='WISP.setClass({"interval": "one"})' title="Одинарный" class="wi-special-ione">Одинарный</div>
+						<div data-wisparam="oneandahalf" onclick='WISP.setClass({"interval": "oneandahalf"})' title="Полуторный" class="wi-special-ioneandahalf">Полуторный</div>
+						<div data-wisparam="double" onclick='WISP.setClass({"interval": "double"})' title="Двойной" class="wi-special-idouble">Двойной</div>
+					</div>
+				</div>
+			</div>
+			<div class="wi-special-block">
+				<div class="wi-special-title">Выравнивание</div>
+				<div class="wi-special-data">
+					<div class="wi-special-image" data-wisname="align">
+						<div data-wisparam="justify" onclick='WISP.setClass({"align": "justify"})' title="По ширине" class="wi-special-ajustify">По ширине</div>
+						<div data-wisparam="off" onclick='WISP.setClass({"align": "off"})' title="Полуторный" class="wi-special-aoff">Отключить</div>
+					</div>
+				</div>
+			</div>
+			<div class="wi-special-block">
+				<div class="wi-special-title">Прослушать:</div>
+				<div class="wi-special-data">
+					<div id="speack-block">
+						<div class="message">Для прослушивания выделите требуемый текст и нажмите Ctrl+Enter</div>
+						<span class="cancelText" onclick='WISP.cancelText()'>Остановить чтение</span>
+					</div>
+				</div>
+			</div>
+			<div class="wi-special-return" style="font-size: 18px !important;"><span onclick="WISP.backToDef(this)" title="Переключиться к обычной версии сайта">Обычная версия сайта</span></div>
+		</div>
+	</div>
     
     <header class="header">
         <div class="header-top">
@@ -373,6 +449,7 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/blind.js"></script>
     <script src="js/main.js"></script>
 
 </body>
